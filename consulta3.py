@@ -7,7 +7,9 @@ while seguir == 's':
     de = input("Moneda de origen: ")
     a = input("Moneda de destino: ")
 
-    modelo.obtener(de, a)
+    modelo.de = de
+    modelo.a = a
+    modelo.obtener()
     print(modelo.valor)
 
 #esto e  s lo mismo que en consulta1 del 12-20
